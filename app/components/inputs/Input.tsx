@@ -7,8 +7,14 @@ interface InputProps {
   label: string;
   id: string;
   type?: string;
+  required?: boolean;
+  register: UseFormRegister<FieldValues>;
+  errors: FieldErrors;
+  disabled?: boolean;
 }
 
-export default function Input() {
-  return <div>Input</div>;
-}
+const Input: React.FC<InputProps> = () => {
+  return <div></div>;
+};
+
+export default Input;
